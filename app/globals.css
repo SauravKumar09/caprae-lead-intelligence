@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #090d16; /* Executive Obsidian Slate */
+  color: #f1f5f9; /* Slate-100: crisp high contrast text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+/* Custom dark scrollbar for tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d121f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Focus styles for keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 1px;
+}
